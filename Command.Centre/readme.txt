@@ -1,1 +1,0 @@
-﻿Command centre is a graphical UI onto the lift system.  It has no logic, but it can display, monitor and command the lifts.

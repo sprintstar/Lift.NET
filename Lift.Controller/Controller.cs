@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Lift.Controller.Domain;
+using Lift.Controller.Interfaces;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lift.Controller
 {
-    internal class Controller
+    public class Controller
     {
+        public Controller()
+        {
+            var floors = Enumerable.Range(1, 10).Select(f => new Floor(f) as IFloor).ToList();
+            var lift = new Domain.Lift();
+            var shaft = new Shaft(floors, lift);
+        }
     }
 }
