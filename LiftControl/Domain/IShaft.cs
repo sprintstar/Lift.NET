@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LiftControl.Interfaces
+namespace LiftControl.Domain
 {
 	internal interface IShaft
 	{

@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,18 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IShaft.cs" />
+    <Compile Include="Domain\Events\ButtonPressEvent.cs" />
+    <Compile Include="Enums\ButtonPressEventSourceEnum.cs" />
+    <Compile Include="Domain\Events\IButtonPressEvent.cs" />
+    <Compile Include="Domain\Events\IEvent.cs" />
+    <Compile Include="Domain\IShaft.cs" />
     <Compile Include="LiftController.cs" />
-    <Compile Include="Enums\LiftStatus.cs" />
+    <Compile Include="Enums\LiftStatusEnum.cs" />
     <Compile Include="Domain\Floor.cs" />
-    <Compile Include="Interfaces\IFloor.cs" />
-    <Compile Include="Interfaces\ILift.cs" />
+    <Compile Include="Domain\IFloor.cs" />
+    <Compile Include="Domain\ILift.cs" />
     <Compile Include="Domain\Lift.cs" />
     <Compile Include="Model\Statuses\LiftControllerStatusReport.cs" />
     <Compile Include="Model\Statuses\LiftStatusReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\Shaft.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

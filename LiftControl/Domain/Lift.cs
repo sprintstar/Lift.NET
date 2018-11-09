@@ -1,5 +1,4 @@
 ﻿using LiftControl.Enums;
-using LiftControl.Interfaces;
 using LiftControl.Model.Statuses;
 
 namespace LiftControl.Domain
@@ -7,7 +6,7 @@ namespace LiftControl.Domain
 	internal class Lift : ILift
 	{
 		public int DestinationfloorLevel { get; }
-		public LiftStatus Status { get; }
+		public LiftStatusEnum Status { get; }
 
 		public string Name { get; }
 
@@ -15,7 +14,7 @@ namespace LiftControl.Domain
 		{
 			Name = name;
 			DestinationfloorLevel = 0;
-			Status = LiftStatus.Stationary;
+			Status = LiftStatusEnum.Stationary;
 		}
 		public LiftStatusReport GetStatusReport()
 		{

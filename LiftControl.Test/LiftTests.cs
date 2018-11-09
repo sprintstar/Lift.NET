@@ -13,7 +13,7 @@ namespace LiftControl.Test
 			var lift = new Lift("Test lift 1");
 
 			Assert.AreEqual(lift.DestinationfloorLevel, 0);
-			Assert.AreEqual(lift.Status, LiftStatus.Stationary);
+			Assert.AreEqual(lift.Status, LiftStatusEnum.Stationary);
 		}
 	}
 }

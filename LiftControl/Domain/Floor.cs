@@ -1,6 +1,4 @@
-﻿using LiftControl.Interfaces;
-
-namespace LiftControl.Domain
+﻿namespace LiftControl.Domain
 {
 	internal class Floor : IFloor
 	{

@@ -1,4 +1,4 @@
-﻿namespace LiftControl.Interfaces
+﻿namespace LiftControl.Domain
 {
 	internal interface IFloor
 	{

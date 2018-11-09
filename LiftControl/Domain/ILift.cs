@@ -1,12 +1,12 @@
 ﻿using LiftControl.Enums;
 using LiftControl.Model.Statuses;
 
-namespace LiftControl.Interfaces
+namespace LiftControl.Domain
 {
 	internal interface ILift
 	{
 		int DestinationfloorLevel { get; }
-		LiftStatus Status { get; }
+		LiftStatusEnum Status { get; }
 
 		LiftStatusReport GetStatusReport();
 	}

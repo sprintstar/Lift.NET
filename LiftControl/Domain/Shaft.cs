@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using LiftControl.Interfaces;
 
 namespace LiftControl.Domain
 {

@@ -1,6 +1,6 @@
 ﻿namespace LiftControl.Enums
 {
-	public enum LiftStatus
+	public enum LiftStatusEnum
 	{
 		Stationary,
 		Traveling

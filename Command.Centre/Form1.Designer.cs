@@ -1,6 +1,6 @@
 ﻿namespace Command.Centre
 {
-	partial class Form1
+	partial class MainForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -30,6 +30,7 @@
 		{
 			this.lblStatus = new System.Windows.Forms.Label();
 			this.btnGetSystemStatus = new System.Windows.Forms.Button();
+			this.tbLog = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// lblStatus
@@ -51,15 +52,28 @@
 			this.btnGetSystemStatus.UseVisualStyleBackColor = true;
 			this.btnGetSystemStatus.Click += new System.EventHandler(this.btnGetSystemStatus_Click);
 			// 
-			// Form1
+			// tbLog
+			// 
+			this.tbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.tbLog.Location = new System.Drawing.Point(163, 13);
+			this.tbLog.Multiline = true;
+			this.tbLog.Name = "tbLog";
+			this.tbLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+			this.tbLog.Size = new System.Drawing.Size(630, 246);
+			this.tbLog.TabIndex = 2;
+			// 
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(805, 271);
+			this.Controls.Add(this.tbLog);
 			this.Controls.Add(this.btnGetSystemStatus);
 			this.Controls.Add(this.lblStatus);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Name = "MainForm";
+			this.Text = "Main form";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -70,6 +84,7 @@
 
 		private System.Windows.Forms.Label lblStatus;
 		private System.Windows.Forms.Button btnGetSystemStatus;
+		private System.Windows.Forms.TextBox tbLog;
 	}
 }
 

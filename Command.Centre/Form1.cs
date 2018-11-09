@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Reflection;
 using System.Windows.Forms;
+using log4net;
+
 // ReSharper disable InconsistentNaming
 
 namespace Command.Centre
 {
-	public partial class Form1 : Form
+	public partial class MainForm : Form
 	{
 		private LiftControl.LiftController _liftController;
 
-		public Form1()
+		public MainForm()
 		{
 			InitializeComponent();
 		}
