@@ -8,8 +8,8 @@
     <ProjectGuid>{E91621A9-65DB-448C-890C-74763A704655}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Lift.Controller.Test</RootNamespace>
-    <AssemblyName>Lift.Controller.Test</AssemblyName>
+    <RootNamespace>LiftControl.Test</RootNamespace>
+    <AssemblyName>LiftControl.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lift.Controller\Lift.Controller.csproj">
+    <ProjectReference Include="..\LiftControl\LiftControl.csproj">
       <Project>{f0aafd09-aca8-4de8-a434-56943c9f0a35}</Project>
-      <Name>Lift.Controller</Name>
+      <Name>LiftControl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

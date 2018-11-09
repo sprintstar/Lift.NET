@@ -80,9 +80,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lift.Controller\Lift.Controller.csproj">
+    <ProjectReference Include="..\LiftControl\LiftControl.csproj">
       <Project>{f0aafd09-aca8-4de8-a434-56943c9f0a35}</Project>
-      <Name>Lift.Controller</Name>
+      <Name>LiftControl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

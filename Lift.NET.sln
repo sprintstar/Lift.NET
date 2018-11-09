@@ -5,14 +5,14 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command.Centre", "Command.Centre\Command.Centre.csproj", "{0ABD79E0-FCE9-4EC0-9ED9-96FD178C844F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lift.Controller", "Lift.Controller\Lift.Controller.csproj", "{F0AAFD09-ACA8-4DE8-A434-56943C9F0A35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftControl", "LiftControl\LiftControl.csproj", "{F0AAFD09-ACA8-4DE8-A434-56943C9F0A35}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{704CF71A-5188-42C1-AC44-EF6AF5897EAE}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lift.Controller.Test", "Lift.Controller.Test\Lift.Controller.Test.csproj", "{E91621A9-65DB-448C-890C-74763A704655}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftControl.Test", "LiftControl.Test\LiftControl.Test.csproj", "{E91621A9-65DB-448C-890C-74763A704655}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
