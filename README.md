@@ -3,7 +3,7 @@
 ## Command Centre
 This is the UI to the lift system.  It will contain no logic, but will display the status of the system, and allow lifts to be summoned etc.
 
-## Lift.Controller
+## LiftController
 
 This will contain the lift logic.
 
