@@ -44,17 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\Events\ButtonPressEvent.cs" />
     <Compile Include="Enums\ButtonPressEventSourceEnum.cs" />
-    <Compile Include="Domain\Events\IButtonPressEvent.cs" />
-    <Compile Include="Domain\Events\IEvent.cs" />
     <Compile Include="Domain\IShaft.cs" />
+    <Compile Include="Enums\LiftDirectionEnum.cs" />
     <Compile Include="LiftController.cs" />
     <Compile Include="Enums\LiftStatusEnum.cs" />
     <Compile Include="Domain\Floor.cs" />
     <Compile Include="Domain\IFloor.cs" />
     <Compile Include="Domain\ILift.cs" />
     <Compile Include="Domain\Lift.cs" />
+    <Compile Include="Model\Messages\In\ButtonPressMessage.cs" />
+    <Compile Include="Model\Messages\Out\PositionMessage.cs" />
     <Compile Include="Model\Statuses\LiftControllerStatusReport.cs" />
     <Compile Include="Model\Statuses\LiftStatusReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,6 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\TinyMessenger\src\TinyMessenger\TinyMessenger\TinyMessenger.csproj">
+      <Project>{de0ca005-3b06-4751-9429-9671e7916492}</Project>
+      <Name>TinyMessenger</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -88,6 +88,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\TinyMessenger\src\TinyMessenger\TinyMessenger\TinyMessenger.csproj">
+      <Project>{de0ca005-3b06-4751-9429-9671e7916492}</Project>
+      <Name>TinyMessenger</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LiftControl\LiftControl.csproj">
       <Project>{f0aafd09-aca8-4de8-a434-56943c9f0a35}</Project>
       <Name>LiftControl</Name>
