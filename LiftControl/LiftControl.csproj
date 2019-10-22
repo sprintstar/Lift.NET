@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Enums\ButtonPressEventSourceEnum.cs" />
     <Compile Include="Domain\IShaft.cs" />
     <Compile Include="Enums\LiftDirectionEnum.cs" />

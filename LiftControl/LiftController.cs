@@ -16,19 +16,14 @@ namespace LiftControl
         private readonly IEnumerable<IShaft> _shafts;
         private readonly ITinyMessengerHub _tinyMessengerHub;
 
-        public LiftController(ITinyMessengerHub tinyMessengerHub)
+        public LiftController(ITinyMessengerHub tinyMessengerHub, Config config)
         {
             _log.Info("LiftController created");
 
-            // Create lifts, floors and shafts
-            var floors = Enumerable.Range(1, 10).Select(f => new Floor(f) as IFloor).ToList();
-            _shafts = new List<IShaft>
-            {
-                new Shaft(floors, new Lift("Lift 1"))
-            };
+            _shafts = config.Shafts.Select(s => new Shaft(s.Floors.Select(f => new Floor(f.Level)).ToList() as IList<IFloor>, new Lift($"{s.Name} lift")));
 
             _tinyMessengerHub = tinyMessengerHub;
-            _tinyMessengerHub.Subscribe<ButtonPressMessage>((m) => { _log.Info($"Button press received from floor {m.Floor}"); });
+            _tinyMessengerHub.Subscribe<ButtonPressMessage>((m) => { _log.Info($"Button press received from floor {m.Floor}, shaft {m.Shaft}"); });
         }
 
         public LiftControllerStatus GetStatus()
